@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Последние вакансии
+{% endblock %}
+
+{% block page_title %}
+	Последние вакансии
+{% endblock %}
+
+{% block body %}
+	{% for item in data %}
+	<div class='block'>
+		<p class='block__name'>{{ item.name }}</p>
+		<p class='block__name__2'>Описание</p>
+		<p class='block__text'>{{ item.desc }}</p>
+		<p class='block__name__2'>Ключевые навыки</p>
+		<p class='block__text'>{{ item.skills }}</p>
+		<p class='block__name__2'>Подробнее</p>
+		<div class='block__block'>
+			<p class='block__text'>{{ item.price }}</p>
+			<p class='block__text'>{{ item.date_published }}</p>
+			<p class='block__text'>{{ item.region }}</p>
+		</div>
+	</div>
+	<div class='breakline'></div>
+	{% endfor %}
+{% endblock %}

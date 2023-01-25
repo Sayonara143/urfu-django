@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Ключевые навыки
+{% endblock %}
+
+{% block page_title %}
+	Ключевые навыки
+{% endblock %}
+
+{% block body %}
+	<table class='block__table'>
+		<tr> 
+			<th class='block__name'>Год</th>
+			<th class='block__name'>Ключевые навыки</th>
+		</tr>
+		{% for item in data %}
+		<tr>
+			<th class='block__name'>{{ item.year }}</th>
+			<th>{{ item.skills }}</th>
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}

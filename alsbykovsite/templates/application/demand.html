@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Востребованность
+{% endblock %}
+
+{% block page_title %}
+	Востребованность
+{% endblock %}
+
+{% block body %}
+	{% for item in data %}
+		<img class="block_img" src="{{ item.image.url }}">
+	{% endfor %}
+{% endblock %}
