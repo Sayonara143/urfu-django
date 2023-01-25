@@ -122,7 +122,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = str(BASE_DIR / "static")
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = str(BASE_DIR / "media")
+MEDIA_ROOT = '/home/alsbykov/urfu-django/alsbykovsite/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
