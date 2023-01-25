@@ -119,10 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = '/home/alsbykov/urfu-django/static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = str(BASE_DIR / "media")
+MEDIA_ROOT = '/home/alsbykov/urfu-django/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
